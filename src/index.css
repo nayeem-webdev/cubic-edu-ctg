@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@theme {
+  --color-primary: #3b82f6;
+  --color-primary-50: #e6edf8;
+  --color-secondary: #047857;
+  --color-secondary-40: #d1fae5;
+  --color-secondary-50: #c5e2c5;
+}
+@layer base {
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+img {
+  width: full;
+  height: auto;
+}
