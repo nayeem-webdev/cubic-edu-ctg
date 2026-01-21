@@ -1,6 +1,7 @@
 import Hero from "../components/home/Hero";
 import Achievement from "../components/home/Achievement";
 import AboutSec from "../components/home/AboutSec";
+import ServiceSec from "../components/home/ServiceSec";
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <Hero />
       <Achievement />
       <AboutSec />
+      <ServiceSec />
     </>
   );
 };

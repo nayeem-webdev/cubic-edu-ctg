@@ -8,6 +8,7 @@ const AboutSec = () => {
         title="About"
         titleColor="Cubic Education"
         subtitle="Chittagong's most established and trusted student consultancy since 2012"
+        color="secondary"
       />
       <div className="flex flex-col lg:flex-row gap-8">
         <p className="w-full lg:w-1/2 leading-relaxed">
@@ -35,7 +36,7 @@ const AboutSec = () => {
           global institutions.
         </p>
       </div>
-      <div className="max-w-4xl mx-auto p-6 border-2 border-primary rounded-2xl bg-primary/20 mt-8 hover:scale-110 transition-all duration-400">
+      <div className="max-w-4xl mx-auto p-6 border-2 border-primary rounded-2xl bg-primary/20 mt-8 hover:scale-105 transition-all duration-400">
         <h1 className="text-medium text-4xl font-bold text-center mb-2">
           Our Mission
         </h1>
