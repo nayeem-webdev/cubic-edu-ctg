@@ -79,7 +79,7 @@ const Hero = () => {
             </div>
 
             {/* AUSTRALIA CARD */}
-            <div className="absolute -right-20 top-30 animate-bounce z-20 group hidden sm:block [animation-delay:.5s]">
+            <div className="absolute -right-20 top-30 animate-bounce z-20 group hidden sm:block [animation-delay:0.5s]">
               <div className="relative flex items-center gap-4 bg-white/95 backdrop-blur-md p-2 rounded-xl shadow-xl border-l-4 border-[#00008b] overflow-hidden min-w-36">
                 <div
                   className="absolute inset-0 opacity-10 pointer-events-none grayscale group-hover:grayscale-0 transition-all duration-500"
@@ -107,7 +107,7 @@ const Hero = () => {
             </div>
 
             {/* UK CARD */}
-            <div className="absolute -left-12 bottom-20 animate-bounce z-20 group hidden sm:block [animation-delay:0.7]">
+            <div className="absolute -left-12 bottom-20 animate-bounce z-20 group hidden sm:block [animation-delay:0.3s]">
               <div className="relative flex items-center gap-4 bg-white/95 backdrop-blur-md p-2 rounded-xl shadow-xl border-l-4 border-[#00247d] overflow-hidden min-w-36">
                 <div
                   className="absolute inset-0 opacity-10 pointer-events-none grayscale group-hover:grayscale-0 transition-all duration-500"
@@ -134,7 +134,7 @@ const Hero = () => {
               </div>
             </div>
             {/* MALAYSIA CARD */}
-            <div className="absolute -right-12 bottom-15 animate-bounce z-20 group hidden sm:block [animation-delay:0.7]">
+            <div className="absolute -right-12 bottom-15 animate-bounce z-20 group hidden sm:block [animation-delay:0.7s]">
               <div className="relative flex items-center gap-4 bg-white/95 backdrop-blur-md p-2 rounded-xl shadow-xl border-l-4 border-[#cc0000] overflow-hidden min-w-36">
                 <div
                   className="absolute inset-0 opacity-10 pointer-events-none grayscale group-hover:grayscale-0 transition-all duration-500"
