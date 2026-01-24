@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Phone, MapPin, Mail, Send } from "lucide-react";
 import SectionTitle from "../ui/SectionTitle";
 
@@ -53,7 +53,7 @@ const ContactSection = () => {
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <div className="bg-gradient-to-br from-slate-50 to-emerald-50 rounded-3xl p-8 border border-slate-200">
+          <div className="bg-linear-to-br from-slate-50 to-emerald-50 rounded-3xl p-8 border border-slate-200">
             <h3 className="text-2xl font-bold text-slate-900 mb-6">
               Send us a Message
             </h3>
@@ -150,7 +150,7 @@ const ContactSection = () => {
           <div className="space-y-8">
             {/* Office Address */}
             <div className="bg-white rounded-2xl p-6 shadow-md border border-slate-100 flex items-start space-x-4">
-              <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center flex-shrink-0">
+              <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center shrink-0">
                 <MapPin className="text-emerald-600" />
               </div>
               <div>
@@ -164,7 +164,7 @@ const ContactSection = () => {
 
             {/* Phone List */}
             <div className="bg-white rounded-2xl p-6 shadow-md border border-slate-100 flex items-start space-x-4">
-              <div className="w-12 h-12 bg-sky-100 rounded-xl flex items-center justify-center flex-shrink-0">
+              <div className="w-12 h-12 bg-sky-100 rounded-xl flex items-center justify-center shrink-0">
                 <Phone className="text-sky-600" />
               </div>
               <div className="flex-1">
@@ -185,7 +185,7 @@ const ContactSection = () => {
 
             {/* Email List */}
             <div className="bg-white rounded-2xl p-6 shadow-md border border-slate-100 flex items-start space-x-4">
-              <div className="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center flex-shrink-0">
+              <div className="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center shrink-0">
                 <Mail className="text-amber-600" />
               </div>
               <div className="flex-1">

@@ -18,7 +18,7 @@ const VisaSuccessSection = () => {
   return (
     <section
       ref={ref}
-      className="py-20 bg-gradient-to-br from-slate-50 to-secondary/10"
+      className="py-20 bg-linear-to-br from-slate-50 to-secondary/10"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}

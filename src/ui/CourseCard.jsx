@@ -10,7 +10,7 @@ const CourseCard = ({
   onEnroll,
 }) => {
   return (
-    <div className="group relative bg-white rounded-[2.5rem] p-4 shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 flex flex-col h-[480px]">
+    <div className="group relative bg-white rounded-[2.5rem] p-4 shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 flex flex-col h-120">
       {/* Curved Image Header */}
       <div className="relative h-60 w-full mb-4">
         <div className="w-full h-full overflow-hidden rounded-4xl rounded-b-[4rem]">
