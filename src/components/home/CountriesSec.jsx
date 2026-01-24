@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay } from "swiper/modules";
+import countryData from "../../assets/data/countryData";
 
 const CountriesSec = () => {
   return (
@@ -34,14 +35,14 @@ const CountriesSec = () => {
             modules={[Autoplay]}
             className="countries-swiper"
           >
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item) => (
-              <SwiperSlide key={item} className="w-auto!">
+            {countryData.map((item) => (
+              <SwiperSlide key={item.id} className="w-auto!">
                 {" "}
                 {/* Important: !w-auto */}
                 <div className="px-2">
                   {" "}
                   {/* Padding around each card */}
-                  <CountryCard />
+                  <CountryCard data={item} />
                 </div>
               </SwiperSlide>
             ))}

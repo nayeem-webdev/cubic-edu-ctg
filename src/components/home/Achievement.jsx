@@ -3,7 +3,6 @@ import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 
 const Achievement = () => {
-  // Attach this 'ref' to the container you want to trigger the animation
   const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.3 });
 
   const stats = [

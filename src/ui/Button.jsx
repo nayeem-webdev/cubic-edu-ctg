@@ -30,7 +30,7 @@ const Button = ({
     primary:
       "bg-[#3b82f6] text-white hover:bg-[#0a4d8f] focus:ring-[#0859aa]/50 active:bg-[#094180] shadow-sm hover:shadow-md",
     secondary:
-      "bg-[#047857] text-white hover:bg-[#4da536] focus:ring-[#5db946]/50 active:bg-[#45932f] shadow-sm hover:shadow-md",
+      "bg-[#047857] text-white hover:bg-[#059669] focus:ring-[#5db946]/50 active:bg-[#45932f] shadow-sm hover:shadow-md",
     danger:
       "bg-red-600 text-white hover:bg-red-700 focus:ring-red-500 active:bg-red-800 shadow-sm hover:shadow-md",
     success:
