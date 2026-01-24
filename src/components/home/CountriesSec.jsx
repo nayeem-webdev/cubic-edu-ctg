@@ -3,7 +3,7 @@ import SectionTitle from "../../ui/SectionTitle";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 
 const CountriesSec = () => {
   return (
@@ -12,71 +12,42 @@ const CountriesSec = () => {
         title="Gain acceptance to a"
         titleColor="top-tier global university."
         subtitle="Cubic Education partners with top-ranked universities and colleges across 10+ countries, helping students make confident, well-informed study abroad decisions."
-        color="secondary"
+        color="primary"
       />
 
-      <Swiper
-        slidesPerView={1}
-        spaceBetween={10}
-        grabCursor={true}
-        autoplay={{
-          delay: 800,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true,
-        }}
-        loop={true}
-        pagination={{
-          clickable: true,
-        }}
-        breakpoints={{
-          "@0.00": {
-            slidesPerView: 1,
-            spaceBetween: 20,
-          },
-          "@0.75": {
-            slidesPerView: 2,
-            spaceBetween: 40,
-          },
-          "@1.00": {
-            slidesPerView: 3,
-            spaceBetween: 80,
-          },
-          "@1.50": {
-            slidesPerView: 4,
-            spaceBetween: 100,
-          },
-        }}
-        modules={[Autoplay]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <CountryCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CountryCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CountryCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CountryCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CountryCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CountryCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CountryCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CountryCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CountryCard />
-        </SwiperSlide>
-      </Swiper>
+      <div className="relative">
+        <div className="overflow-hidden px-2">
+          <Swiper
+            slidesPerView="auto"
+            spaceBetween={10}
+            centeredSlides={false}
+            grabCursor={true}
+            autoplay={{
+              delay: 800,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+            }}
+            loop={true}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Autoplay]}
+            className="countries-swiper"
+          >
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item) => (
+              <SwiperSlide key={item} className="w-auto!">
+                {" "}
+                {/* Important: !w-auto */}
+                <div className="px-2">
+                  {" "}
+                  {/* Padding around each card */}
+                  <CountryCard />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      </div>
     </div>
   );
 };

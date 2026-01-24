@@ -8,7 +8,7 @@ const AboutSec = () => {
         title="About"
         titleColor="Cubic Education"
         subtitle="Chittagong's most established and trusted student consultancy since 2012"
-        color="secondary"
+        color="primary"
       />
       <div className="flex flex-col lg:flex-row gap-8">
         <p className="w-full lg:w-1/2 leading-relaxed">
