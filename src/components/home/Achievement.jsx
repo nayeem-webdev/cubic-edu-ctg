@@ -12,7 +12,7 @@ const Achievement = () => {
   ];
 
   return (
-    <div className="w-full bg-secondary/10">
+    <div className="w-full bg-primary/10">
       {/* 1. Statistics Row: Using justify-around */}
       <div className="relative">
         {/* The Stats Wrapper */}
@@ -24,7 +24,7 @@ const Achievement = () => {
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className="border-2 min-w-50 rounded-xl bg-secondary/10 backdrop-blur-md text-secondary p-6 text-center flex flex-col items-center shadow-xl"
+                className="border-2 min-w-50 rounded-xl bg-primary/10 backdrop-blur-md text-primary p-6 text-center flex flex-col items-center shadow-xl"
               >
                 <span className="text-5xl font-bold">
                   {inView ? (

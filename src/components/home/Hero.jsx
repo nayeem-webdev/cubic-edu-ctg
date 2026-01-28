@@ -5,14 +5,14 @@ import { GraduationCap, Award } from "lucide-react";
 
 const Hero = () => {
   return (
-    <div className="w-full bg-primary/10">
+    <div className="w-full bg-secondary/10">
       <div className="pt-36 pb-28 px-4 max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-12">
         {/* Left Section: Content */}
         <div className=" lg:max-w-lg w-full flex flex-col gap-6">
-          <p className="flex gap-2 px-4 py-2 self-start font-medium text-secondary bg-secondary/10 rounded-full items-center">
+          <div className="flex gap-2 px-4 py-2 self-start font-medium text-secondary bg-secondary/10 rounded-full items-center">
             <SlBadge />
-            Proudly Serving Students Since 2012
-          </p>
+            <span>Proudly Serving Students Since 2012</span>
+          </div>
 
           <h1 className="text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
             Your Gateway to

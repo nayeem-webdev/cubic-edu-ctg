@@ -10,14 +10,14 @@ const CourseCard = ({
   onEnroll,
 }) => {
   return (
-    <div className="group relative bg-white rounded-[2.5rem] p-4 shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 flex flex-col h-120">
+    <div className="group relative bg-white rounded-xl overflow-x-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 flex flex-col h-120">
       {/* Curved Image Header */}
       <div className="relative h-60 w-full mb-4">
-        <div className="w-full h-full overflow-hidden rounded-4xl rounded-b-[4rem]">
+        <div className="w-full aspect-5/4 overflow-hidden rounded-4xl rounded-b-full">
           <img
             src={imageUrl}
             alt={title}
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            className="w-full h-full object-fill transition-transform duration-700 group-hover:scale-110"
           />
         </div>
 
