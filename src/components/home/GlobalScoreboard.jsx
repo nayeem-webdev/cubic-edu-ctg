@@ -7,7 +7,7 @@ import {
   testimonials,
 } from "../../assets/data/GlobalScoreboardData";
 const GlobalScoreboard = () => {
-  const [activeCountry, setActiveCountry] = useState("in");
+  const [activeCountry, setActiveCountry] = useState("us");
 
   return (
     <div className="relative overflow-hidden">
@@ -59,18 +59,20 @@ const GlobalScoreboard = () => {
                 {countries.map((country) => (
                   <button
                     key={country.id}
-                    className={`border-2  absolute ${getCountryPosition(country.id)} w-4 h-4 bg-${country.color} rounded-full border-2 border-white shadow-lg transition-all duration-300 hover:scale-125 ${
+                    // Remove bg-${country.color} from className
+                    className={`border-2 absolute ${getCountryPosition(country.id)} w-4 h-4 rounded-full border-2 border-white shadow-lg transition-all duration-300 hover:scale-125 ${
                       activeCountry === country.id
                         ? "scale-125 ring-4 ring-secondary/20"
                         : ""
                     }`}
+                    style={{
+                      backgroundColor: country.color,
+                    }}
                     onClick={() => setActiveCountry(country.id)}
                     onMouseEnter={() => setActiveCountry(country.id)}
                     onMouseLeave={() => setActiveCountry("in")}
                   >
-                    <div className="absolute -top-6 left-1/2 -translate-x-1/2 whitespace-nowrap bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">
-                      {country.name}: {country.count}+ students
-                    </div>
+                    {/* Tooltip content */}
                   </button>
                 ))}
 
@@ -179,7 +181,12 @@ const GlobalScoreboard = () => {
                       <div>
                         <div className="flex items-center gap-2">
                           <div
-                            className={`w-3 h-3 rounded-full ${countries.find((c) => c.id === activeCountry)?.color}`}
+                            className="w-3 h-3 rounded-full"
+                            style={{
+                              backgroundColor: countries.find(
+                                (c) => c.id === activeCountry,
+                              )?.color,
+                            }}
                           ></div>
                           <span className="font-bold text-gray-900">
                             {
@@ -221,7 +228,10 @@ const GlobalScoreboard = () => {
                   onClick={() => setActiveCountry(country.id)}
                 >
                   <div
-                    className={`w-2 h-2 rounded-full bg-${country.color}`}
+                    className={`w-2 h-2 rounded-full `}
+                    style={{
+                      backgroundColor: country.color,
+                    }}
                   ></div>
                   {country.name} ({country.count}+)
                 </button>
